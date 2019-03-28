@@ -1,0 +1,68 @@
+/* ALL PAGES */
+@import url('https://fonts.googleapis.com/css?family=Gravitas+One');
+body {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+/* SPLASH PAGE */
+.splashContainer {
+     font-family: 'Gravitas One', cursive;
+}
+.splashName {
+    font-size: 30vh;
+    margin-top: 10vh;
+    margin-left: 2vw;
+}
+.splashContinue {
+    font-size: 10vh;
+    margin-top: 10vh;
+    margin-left: 2vw;
+}
+/* MAIN BODY */
+.mainContain {
+    width: 100vw;
+    display:flex;
+}
+.panelHead {
+    height: 20vh;
+    width: 
+}
+.panelHead:before {
+    content: "";
+    position: absolute;
+    border: 3px solid teal;
+    
+    top: 10%; bottom: -11%; left: 3%; right: 3%;
+    z-index: -1;
+  
+    -webkit-transform: perspective(50em) rotateX(-30deg);
+    transform: perspective(50em) rotateX(-30deg);
+}
+.ProjTitle {
+    border: solid;
+}
+
+
+
+/* @media screen and (max-width: 600px){
+    .mcontain {
+      flex-direction: column;
+    }
+  nav {
+      height: 10vh;
+      width: 100vw;
+  }
+  .aside {
+    order: 1;
+    height: 10vh;
+    width: 100vw;
+}
+    .article {
+      order: 1;
+      height: 50vh;
+      width: 100vw;
+    }
+  } */
