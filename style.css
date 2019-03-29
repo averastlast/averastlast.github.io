@@ -21,32 +21,135 @@ a {
     margin-top: 10vh;
     margin-left: 2vw;
 }
+.splashimg {
+    border-radius: 50%;
+}
 /* MAIN BODY */
 .mainContain {
-    width: 100vw;
+    height: 100vh;
+    width: 1000vw;
+    /* NEED TO SEE IF WIDTH HAS TO BE DEFINED HERE. I THINK POLYSHAPES NEED DEF 
+    HERE TO OPERATE BY THE PERCENTAGES... */
     display:flex;
+    overflow: hidden;
+    font-family: 'Gravitas One', cursive;
 }
+
+/* !!! AFTER A LOT OF RESEARCH I FOUND THE CSS BEST SUITED FOR MY LOOK
+ALSO FOUND A GREAT SITE TO ASSIST IN SHAPE CREATION!
+https://bennettfeely.com/clippy/
+SHAPES THAT OVERLAP NEED NEGATIVE MARGINS. THERES PROBS A MATH WAY TO 
+FIGURE OUT UNITS */
 .panelHead {
-    height: 20vh;
-    width: 
+    font-size: 6vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: 1vw;
+    margin-right: -24vw;
+    background: green;
+    height: 98vh;
+    width: 100vw;
+    -webkit-clip-path: polygon(0 0, 100% 0, 50% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 50% 100%, 0% 100%);
 }
-.panelHead:before {
-    content: "";
-    position: absolute;
-    border: 3px solid teal;
-    
-    top: 10%; bottom: -11%; left: 3%; right: 3%;
-    z-index: -1;
-  
-    -webkit-transform: perspective(50em) rotateX(-30deg);
-    transform: perspective(50em) rotateX(-30deg);
-}
+
+/* NEED TO FIGURE OUT TEXT POSITIONING TO MAKE SHOW ... PROB NEED A DIV WITHIN
+THIS ONE AND SEE IF POSITIONING CAN BE FIXED  */
 .ProjTitle {
-    border: solid;
+    font-size: 6vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: -24vw;
+    margin-right: 1vw;
+    height: 98vh;
+    width: 100vw;
+    background: yellowgreen;
+    -webkit-clip-path: polygon(50% 0, 100% 0%, 50% 100%, 0% 100%);
+    clip-path: polygon(50% 0, 100% 0%, 50% 100%, 0% 100%);
 }
 
+.ProjList{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    height: 98vh;
+    width: 100vw;
+    background: yellowgreen;
+}
 
+.skillsTitle {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    height: 98vh;
+    width: 100vw;
+    background: yellowgreen;
+}
 
+.skillsList {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    height: 98vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+.skillsL1 {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    height: 30vh;
+    width: 20vw;
+    background: yellowgreen;
+    border-radius: 50%;
+}
+.skillsL2 {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    height: 30vh;
+    width: 20vw;
+    background: yellowgreen;
+    border-radius: 50%;
+}
+.skillsL3 {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    height: 30vh;
+    width: 20vw;
+    background: yellowgreen;
+    border-radius: 50%;
+}
+
+.contactTitle {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    height: 98vh;
+    width: 100vw;
+    background: yellowgreen;
+}
+
+.contactList {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    height: 98vh;
+    width: 100vw;
+    background: yellowgreen;
+}
+
+/* MEDIA INQUERY FROM CLASS */
 /* @media screen and (max-width: 600px){
     .mcontain {
       flex-direction: column;
