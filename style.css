@@ -1,18 +1,25 @@
-/* ALL PAGES */
-@import url('https://fonts.googleapis.com/css?family=Gravitas+One');
+@import url('https://fonts.googleapis.com/css?family=Oswald|Rubik+Mono+One&display=swap');
+
 body {
     margin: 0;
     padding: 0;
+    background-color: navy;
+    color: white;
+    font-family: 'Oswald', sans-serif;
 }
+
 a {
     text-decoration: none;
+    color: turquoise;
 }
-/* SPLASH PAGE */
-.splashContainer {
-     font-family: 'Gravitas One', cursive;
+
+a:hover {
+    color: blue;
 }
-.splashName {
-    font-size: 30vh;
+
+.title {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 10vh;
     margin-top: 10vh;
     margin-left: 2vw;
 }
@@ -21,8 +28,9 @@ a {
     margin-top: 10vh;
     margin-left: 2vw;
 }
-.splashimg {
+img {
     border-radius: 50%;
+    height: 30vh;
 }
 /* MAIN BODY */
 .mainContain {
