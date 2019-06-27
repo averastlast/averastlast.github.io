@@ -5,12 +5,17 @@ body {
     padding: 0;
     background-color: tan;
     font-family: 'Lato', sans-serif;
+    font-size: 3vh;
 }
 
 .container {
     background-color: #ffffff6b;
+    background-image: url(images/photo.jpeg);
+    /* https://unsplash.com/photos/fMT5pyyVGGo */
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     flex-direction: column;
     margin: 10vh;
     border-radius: 5vh;
@@ -19,23 +24,26 @@ body {
 
 a {
     text-decoration: none;
-    color: rgb(44, 160, 69);
+    color: rgb(19, 80, 31);
 }
 
 a:hover {
-    color: rgb(25, 95, 41);
+    color: rgb(0, 0, 0);
 }
 
 .title {
     font-family: 'Oswald', sans-serif;
     font-size: 10vh;
-    /* margin-top: 10vh;
-    margin-left: 2vw; */
+    margin-bottom: -1vh;
+    margin-left: 2vh;
 }
-.splashContinue {
-    font-size: 10vh;
-    margin-top: 10vh;
-    margin-left: 2vw;
+.subtitle{
+    margin: 2vh;
+    /* text-align: center; */
+}
+.info {
+    display: flex;
+    justify-content: space-around;
 }
 img {
     border-radius: 50%;
