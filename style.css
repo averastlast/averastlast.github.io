@@ -1,27 +1,36 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald|Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato|Oswald&display=swap');
 
 body {
     margin: 0;
     padding: 0;
-    background-color: navy;
-    color: white;
-    font-family: 'Oswald', sans-serif;
+    background-color: tan;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    background-color: #ffffff6b;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10vh;
+    border-radius: 5vh;
+    padding: 2vh;
 }
 
 a {
     text-decoration: none;
-    color: turquoise;
+    color: rgb(44, 160, 69);
 }
 
 a:hover {
-    color: blue;
+    color: rgb(25, 95, 41);
 }
 
 .title {
-    font-family: 'Rubik Mono One', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 10vh;
-    margin-top: 10vh;
-    margin-left: 2vw;
+    /* margin-top: 10vh;
+    margin-left: 2vw; */
 }
 .splashContinue {
     font-size: 10vh;
@@ -32,148 +41,3 @@ img {
     border-radius: 50%;
     height: 30vh;
 }
-/* MAIN BODY */
-.mainContain {
-    height: 100vh;
-    width: 1000vw;
-    /* NEED TO SEE IF WIDTH HAS TO BE DEFINED HERE. I THINK POLYSHAPES NEED DEF 
-    HERE TO OPERATE BY THE PERCENTAGES... */
-    display:flex;
-    overflow: hidden;
-    font-family: 'Gravitas One', cursive;
-}
-
-/* !!! AFTER A LOT OF RESEARCH I FOUND THE CSS BEST SUITED FOR MY LOOK
-ALSO FOUND A GREAT SITE TO ASSIST IN SHAPE CREATION!
-https://bennettfeely.com/clippy/
-SHAPES THAT OVERLAP NEED NEGATIVE MARGINS. THERES PROBS A MATH WAY TO 
-FIGURE OUT UNITS */
-.panelHead {
-    font-size: 6vh;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-    margin-left: 1vw;
-    margin-right: -24vw;
-    background: green;
-    height: 98vh;
-    width: 100vw;
-    -webkit-clip-path: polygon(0 0, 100% 0, 50% 100%, 0% 100%);
-    clip-path: polygon(0 0, 100% 0, 50% 100%, 0% 100%);
-}
-
-/* NEED TO FIGURE OUT TEXT POSITIONING TO MAKE SHOW ... PROB NEED A DIV WITHIN
-THIS ONE AND SEE IF POSITIONING CAN BE FIXED  */
-.ProjTitle {
-    font-size: 6vh;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-    margin-left: -24vw;
-    margin-right: 1vw;
-    height: 98vh;
-    width: 100vw;
-    background: yellowgreen;
-    -webkit-clip-path: polygon(50% 0, 100% 0%, 50% 100%, 0% 100%);
-    clip-path: polygon(50% 0, 100% 0%, 50% 100%, 0% 100%);
-}
-
-.ProjList{
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-    margin-left: 1vw;
-    margin-right: 1vw;
-    height: 98vh;
-    width: 100vw;
-    background: yellowgreen;
-}
-
-.skillsTitle {
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-    margin-left: 1vw;
-    margin-right: 1vw;
-    height: 98vh;
-    width: 100vw;
-    background: yellowgreen;
-}
-
-.skillsList {
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-    margin-left: 1vw;
-    margin-right: 1vw;
-    height: 98vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-}
-.skillsL1 {
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-    margin-left: 1vw;
-    margin-right: 1vw;
-    height: 30vh;
-    width: 20vw;
-    background: yellowgreen;
-    border-radius: 50%;
-}
-.skillsL2 {
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-    margin-left: 1vw;
-    margin-right: 1vw;
-    height: 30vh;
-    width: 20vw;
-    background: yellowgreen;
-    border-radius: 50%;
-}
-.skillsL3 {
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-    margin-left: 1vw;
-    margin-right: 1vw;
-    height: 30vh;
-    width: 20vw;
-    background: yellowgreen;
-    border-radius: 50%;
-}
-
-.contactTitle {
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-    margin-left: 1vw;
-    margin-right: 1vw;
-    height: 98vh;
-    width: 100vw;
-    background: yellowgreen;
-}
-
-.contactList {
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-    margin-left: 1vw;
-    margin-right: 1vw;
-    height: 98vh;
-    width: 100vw;
-    background: yellowgreen;
-}
-
-/* MEDIA INQUERY FROM CLASS */
-/* @media screen and (max-width: 600px){
-    .mcontain {
-      flex-direction: column;
-    }
-  nav {
-      height: 10vh;
-      width: 100vw;
-  }
-  .aside {
-    order: 1;
-    height: 10vh;
-    width: 100vw;
-}
-    .article {
-      order: 1;
-      height: 50vh;
-      width: 100vw;
-    }
-  } */
