@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato|Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400|Oswald&display=swap');
 
 body {
     margin: 0;
@@ -11,12 +11,77 @@ body {
     display: flex;
 }
 
-.heading {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 2vh;
+a {
+    text-decoration: none;
+    color: rgb(215, 243, 221);
 }
+
+/* MAIN */
+.main {
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4vw;
+    line-height: 2;
+}
+
+.titleM {
+font-size: 5vh;
+}
+
+.textM{
+    font-size: 3.5vh;
+    font-weight: 300;
+}
+
+.portM {
+    margin-top: 5vh;
+    font-size: 4vh;
+    text-decoration: none;
+    color:black
+}
+
+/* CONTACT */
+.mainContact {
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4vw;
+    line-height: 2;
+}
+
+.titleC {
+font-size: 5vh;
+}
+
+.textC{
+    font-size: 3.5vh;
+    font-weight: 300;
+}
+
+/* PORTFOLIO */
+.mainPort {
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4vw;
+    line-height: 2;
+}
+
+.titleP {
+font-size: 5vh;
+}
+
+.textP{
+    font-size: 3.5vh;
+    font-weight: 300;
+}
+
+
+/* SD */
 
 .sidebar {
     margin: 0;
@@ -26,19 +91,18 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     width: 25vw;
-}
-.main {
-    width: 75vw;
-}
-
-a {
-    text-decoration: none;
-    color: rgb(215, 243, 221);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
 }
 
-/* a:hover {
-    color: rgb(250, 243, 153);
-} */
+.heading {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2vh;
+}
 
 .title {
     font-family: 'Oswald', sans-serif;
@@ -54,8 +118,17 @@ a {
     padding: 5vh;
     line-height: 2;
 }
+
+/* IMG */
+
 .profile {
     border-radius: 50%;
     height: 25vh;
     margin-bottom: 1vh;
+}
+
+.icon {
+    width: 2vw;
+    max-height: 3vh;
+    margin-right: 3vw;
 }
