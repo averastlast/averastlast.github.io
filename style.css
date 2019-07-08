@@ -69,16 +69,30 @@ button:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 4vw;
+    padding: 4vh;
     line-height: 2;
 }
 
+.imgC {
+    height: 50vh;
+    width: 25vw;
+    margin-left: 20vw;
+    /* margin-top: 30vh; */
+}
+
 .titleC {
-font-size: 5vh;
+font-size: 4.5vh;
 }
 
 .textC{
     font-size: 3.5vh;
+    font-weight: 300;
+}
+
+.textCB{
+    font-size: 3vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
     font-weight: 300;
 }
 
@@ -141,7 +155,7 @@ hr{
 .sidebar {
     margin: 0;
     background-color: #ffffff6b;
-    color: white;
+    color: green;
     background-image: url(images/photo.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
